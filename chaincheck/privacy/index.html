@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChainCheck Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; background: #f5f7fa; color: #16324F;
+         font: 16px/1.6 -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin-top: 32px; color: #006D68; }
+  .meta { color: #556; font-size: .95rem; }
+  a { color: #006D68; }
+  code { background: #e7edf3; padding: 1px 5px; border-radius: 4px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f1b2a; color: #dfe8f2; }
+    h2 { color: #66D8CE; }
+    .meta { color: #9fb0c4; }
+    code { background: #1c2b3d; }
+    a { color: #66D8CE; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>ChainCheck Privacy Policy</h1>
+<p class="meta">Effective date: <strong>15 September 2026</strong><br>
+Publisher: Shinlay &middot; Contact: support@shinlay.com<br>
+Applies to: ChainCheck for Android, package <code>app.chaincheck.chaincheck</code>.</p>
+
+<h2>Summary</h2>
+<p>ChainCheck is a local-first blockchain check tool. It has <strong>no accounts,
+no ChainCheck backend, no wallet connection, and no ads</strong>. It never asks for
+seed phrases, private keys, or signing authority, and it never moves your funds.</p>
+<p>Most of what ChainCheck does happens <strong>on your device</strong>. The one
+time data leaves your device is when you ask ChainCheck to read public blockchain
+data: the address, transaction, or contract you chose to check is sent to a
+third-party blockchain data provider so the result can be retrieved.</p>
+
+<h2>What stays on your device</h2>
+<p>ChainCheck stores the following <strong>only on your device</strong>, protected
+by the operating system's app storage:</p>
+<ul>
+  <li>scan and check history you choose to save;</li>
+  <li>saved recipients (addresses you explicitly confirmed);</li>
+  <li>settings, appearance, and network/provider preferences;</li>
+  <li>any threat dataset you import.</li>
+</ul>
+<p>ChainCheck does not upload this data to us or anyone else. It is removed when
+you uninstall the app, or when you use the in-app <strong>Erase all</strong>
+control.</p>
+
+<h2>What leaves your device when you run a check</h2>
+<p>When you choose to check an address, payment request, token, contract, or
+transaction, ChainCheck sends that identifier (for example an address or a
+transaction hash) to the <strong>blockchain data provider</strong> selected for
+that network, over HTTPS, so it can read public chain data. That provider sees
+your IP address and the identifier you queried.</p>
+<p>Built-in default providers:</p>
+<ul>
+  <li><strong>Ethereum / Base:</strong> dRPC (<code>https://eth.drpc.org</code>, <code>https://base.drpc.org</code>)</li>
+  <li><strong>Bitcoin:</strong> mempool.space (<code>https://mempool.space/api</code>)</li>
+  <li><strong>Testnets:</strong> PublicNode / dRPC testnet endpoints</li>
+</ul>
+<p>You can change the provider in Settings. These are independent third parties
+with their own privacy policies and terms; ChainCheck does not control them.
+ChainCheck does not send your saved history, recipients, labels, or settings to
+any provider &mdash; only the specific identifier you asked to check.</p>
+
+<h2>Camera and QR codes</h2>
+<p>Scanning uses the device camera. Camera frames and decoded QR contents are
+processed <strong>on-device</strong> using Google ML Kit's barcode scanning;
+images are not uploaded. ML Kit may send performance and usage metrics (such as
+device and app information, per-installation identifiers, performance metrics,
+and error codes) to Google, as described in the ML Kit terms. Auto-zoom is not
+enabled in ChainCheck.</p>
+
+<h2>Clipboard</h2>
+<p>ChainCheck reads the clipboard only when you tap <strong>Paste</strong>. It
+does not read the clipboard in the background, and it does not transmit clipboard
+contents until you start a check.</p>
+
+<h2>Analytics</h2>
+<p>Optional analytics is <strong>off by default</strong>. If you turn it on,
+ChainCheck records a small, fixed set of local events (allow-listed, no addresses,
+no labels, no history). In this version there is no analytics backend, so nothing
+is transmitted. You can turn it off at any time.</p>
+
+<h2>Diagnostics you export</h2>
+<p>If you export a diagnostic bundle or payment evidence, ChainCheck redacts
+sensitive local annotations and secrets, and the export happens only when you
+initiate it. Nothing is sent automatically.</p>
+
+<h2>What ChainCheck never does</h2>
+<ul>
+  <li>It never asks for or stores seed phrases or private keys.</li>
+  <li>It never connects to your wallet or signs transactions.</li>
+  <li>It never sells your data or shows ads.</li>
+  <li>It does not upload your saved history, recipients, labels, or settings.</li>
+</ul>
+
+<h2>Third-party services</h2>
+<ul>
+  <li>Blockchain data providers (see above) &mdash; used to read public chain data.</li>
+  <li>Google ML Kit &mdash; on-device barcode scanning; metrics as described in the
+      <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>.</li>
+</ul>
+
+<h2>Data retention and deletion</h2>
+<p>Because ChainCheck stores your data locally, you can delete it at any time with
+the in-app <strong>Erase all</strong> control, or by uninstalling the app. We hold
+no server copy of your data.</p>
+
+<h2>Children</h2>
+<p>ChainCheck is not directed to children and is intended for users aged 18 and
+over.</p>
+
+<h2>Security</h2>
+<p>Network requests use HTTPS. Local data is stored in the app's private storage.
+No method of transmission or storage is perfectly secure, so keep your device
+protected.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the effective date above will be updated and the new
+policy published at the same URL.</p>
+
+<h2>Contact</h2>
+<p>Questions: support@shinlay.com.</p>
+</main>
+</body>
+</html>
