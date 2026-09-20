@@ -26,9 +26,9 @@
 <body>
 <main>
 <h1>ChainCheck Privacy Policy</h1>
-<p class="meta">Effective date: <strong>17 September 2026</strong><br>
+<p class="meta">Effective date: <strong>20 September 2026</strong><br>
 Publisher: Shinlay &middot; Contact: support@shinlay.com<br>
-Applies to: ChainCheck for Android, package <code>com.shinlay.chaincheck</code>.</p>
+Applies to: ChainCheck for Android and iOS (app ID <code>com.shinlay.chaincheck</code>).</p>
 
 <h2>Summary</h2>
 <p>ChainCheck is a local-first blockchain check tool. It has <strong>no accounts,
@@ -90,11 +90,12 @@ updates off at any time, and manual checks never require an update.</p>
 
 <h2>Camera and QR codes</h2>
 <p>Scanning uses the device camera. Camera frames and decoded QR contents are
-processed <strong>on-device</strong> using Google ML Kit's barcode scanning;
-images are not uploaded. ML Kit may send performance and usage metrics (such as
+processed <strong>on-device</strong>; images are not uploaded. On Android, barcode
+decoding uses Google ML Kit, which may send performance and usage metrics (such as
 device and app information, per-installation identifiers, performance metrics,
-and error codes) to Google, as described in the ML Kit terms. Auto-zoom is not
-enabled in ChainCheck.</p>
+and error codes) to Google, as described in the ML Kit terms. On iOS, decoding
+uses Apple's on-device barcode detection and no data is sent to Google. Auto-zoom
+is not enabled in ChainCheck.</p>
 
 <h2>Clipboard</h2>
 <p>ChainCheck reads the clipboard only when you tap <strong>Paste</strong>. It
@@ -123,8 +124,8 @@ initiate it. Nothing is sent automatically.</p>
 <h2>Third-party services</h2>
 <ul>
   <li>Blockchain data providers (see above) &mdash; used to read public chain data.</li>
-  <li>Google ML Kit &mdash; on-device barcode scanning; metrics as described in the
-      <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>.</li>
+  <li>Google ML Kit (Android only) &mdash; on-device barcode scanning; metrics as
+      described in the <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>.</li>
   <li>Public threat-data sources (OFAC, UK Sanctions, ScamSniffer) and the
       developer's public download host &mdash; used only for the local threat list
       and its opt-in updates; see Threat data notices.</li>
