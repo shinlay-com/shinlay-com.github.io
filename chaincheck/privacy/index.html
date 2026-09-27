@@ -26,7 +26,7 @@
 <body>
 <main>
 <h1>ChainCheck Privacy Policy</h1>
-<p class="meta">Effective date: <strong>20 September 2026</strong><br>
+<p class="meta">Effective date: <strong>27 September 2026</strong><br>
 Publisher: Shinlay &middot; Contact: support@shinlay.com<br>
 Applies to: ChainCheck for Android and iOS (app ID <code>com.shinlay.chaincheck</code>).</p>
 
@@ -34,11 +34,11 @@ Applies to: ChainCheck for Android and iOS (app ID <code>com.shinlay.chaincheck<
 <p>ChainCheck is a local-first blockchain check tool. It has <strong>no accounts,
 no ChainCheck backend, no wallet connection, and no ads</strong>. It never asks for
 seed phrases, private keys, or signing authority, and it never moves your funds.</p>
-<p>Most of what ChainCheck does happens <strong>on your device</strong>. The one
-time data leaves your device is when you ask ChainCheck to read public blockchain
-data: the address, payment request, token, contract, or transaction you chose to
-check is sent to a third-party blockchain data provider so the result can be
-retrieved.</p>
+<p>Most of what ChainCheck does happens <strong>on your device</strong>. Data
+leaves your device only when you ask ChainCheck to read public blockchain data:
+the identifier you chose to check (an address, transaction hash, payment request,
+token, or contract) is sent to the third-party service(s) needed to retrieve the
+result.</p>
 
 <h2>What stays on your device</h2>
 <p>ChainCheck stores the following <strong>only on your device</strong>, protected
@@ -77,6 +77,12 @@ your IP address and the identifier you queried.</p>
 with their own privacy policies and terms; ChainCheck does not control them.
 ChainCheck does not send your saved history, recipients, labels, or settings to
 any provider &mdash; only the specific identifier you asked to check.</p>
+<p>For a <strong>contract inspection</strong>, ChainCheck also asks the public
+<strong>Sourcify</strong> service (<code>https://sourcify.dev</code>) for the
+contract's ABI (its verified function list), so it can show what a verified
+contract exposes. That is a <strong>second host</strong>, separate from the
+blockchain data provider, and the request discloses only the chain and the
+contract address &mdash; never a wallet, label, saved recipient, or history.</p>
 
 <h2>Threat-data updates</h2>
 <p>ChainCheck bundles a local threat list built from public sources (the U.S. OFAC
@@ -124,6 +130,9 @@ initiate it. Nothing is sent automatically.</p>
 <h2>Third-party services</h2>
 <ul>
   <li>Blockchain data providers (see above) &mdash; used to read public chain data.</li>
+  <li><strong>Sourcify</strong> (<code>https://sourcify.dev</code>) &mdash; used to
+      look up a verified contract's ABI during a contract inspection; the request
+      discloses the chain and contract address only.</li>
   <li>Google ML Kit (Android only) &mdash; on-device barcode scanning; metrics as
       described in the <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>.</li>
   <li>Public threat-data sources (OFAC, UK Sanctions, ScamSniffer) and the
